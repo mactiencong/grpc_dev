@@ -1,0 +1,12 @@
+syntax = "proto2";
+service HelloWorldService {
+    rpc SayHelloWorld(HelloWorldRequestMessage) returns (HelloWordReplyMessage){}
+}
+
+message HelloWorldRequestMessage {
+    required string name = 1;
+}
+
+message HelloWordReplyMessage {
+    required string message = 1;
+}
